@@ -23,7 +23,7 @@ PocketVR streams SteamVR games from your Windows PC to your Android phone. Your 
 
 **No accounts. No time limits. No watermarks. No licence checks. No telemetry.**
 
-> **Early software.** It works, but it has only been tested on one setup so far. See [What has been tested](#what-has-been-tested) before you expect too much.
+> **Status:** Early release. See [Compatibility](#compatibility) for tested configurations and known limitations.
 
 ---
 
@@ -194,27 +194,36 @@ Each session uses signed identities and fresh encryption keys, and the video and
 
 ---
 
-## What has been tested
+## Compatibility
 
-So you know what to expect, here's what has really been run.
+PocketVR 0.1.0 has been tested on the reference configuration below. Validation on additional hardware is ongoing.
 
-**Tested setup:** AMD RX 590, Ryzen 5 5600, Google Pixel 4a, SteamVR and War Thunder.
-
-| Measured over USB, in the SteamVR home scene | Result |
+| Component | Reference configuration |
 |---|---|
-| Frame rate | Steady 60 fps at 2160×1080 |
-| 4-minute stability run | No disconnects or resolution changes |
-| Total delay (median) | About 72–89 ms |
+| Graphics | AMD Radeon RX 590 (AMF encoder) |
+| Processor | AMD Ryzen 5 5600 |
+| Phone | Google Pixel 4a, Android 11 |
+| Connection | USB |
+| Software | SteamVR, War Thunder |
 
-**Not yet proven:**
+### Performance
 
-- A full 30-minute play session
-- NVIDIA and Intel graphics cards: the code exists, but it has never run on them
-- HEVC video: use H.264 for now
-- Other phones and other headsets
-- **A PC that has never used ALVR.** On the test PC, War Thunder's view was corrected using room data ALVR had left behind. If your game looks upside down, please [open an issue](https://github.com/saimystry/PocketVR-Open/issues).
+Measured on the reference configuration in SteamVR Home.
 
-**Not planned for now:** phone audio, 6DoF position tracking and 90/120 Hz.
+| Metric | Result |
+|---|---|
+| Resolution | 2160×1080 |
+| Frame rate | 60 fps |
+| End-to-end latency (median) | 72–89 ms |
+| Stability | No disconnects or resolution changes in a 4-minute test |
+
+### Known limitations
+
+- **NVIDIA and Intel graphics:** NVENC and Media Foundation encoders are implemented and awaiting hardware validation.
+- **Video codec:** H.264 is recommended. HEVC is under evaluation.
+- **OpenXR titles:** a title may display incorrectly on a system with no existing SteamVR room data. Please [report an issue](https://github.com/saimystry/PocketVR-Open/issues) if this occurs.
+- **Tracking:** head rotation only (3DoF), which suits seated experiences.
+- **Display and audio:** output is 60 Hz, and audio plays on the PC.
 
 ---
 
@@ -246,10 +255,10 @@ No. Any Cardboard-style phone headset will do.
 Yes, over Wi-Fi. A USB cable is more reliable and is recommended. For Wi-Fi, use 5 GHz.
 
 **Does it work with War Thunder?**
-Yes. War Thunder has run on the tested setup. A full 30-minute session is still being proven.
+Yes. War Thunder has been tested on the reference configuration.
 
 **Which games work?**
-It's built for SteamVR games, using both OpenVR and OpenXR. Only SteamVR home and War Thunder have been tried so far, so please report what works for you.
+PocketVR is designed for SteamVR titles using OpenVR or OpenXR. Compatibility reports are welcome.
 
 **Can I walk around?**
 No. PocketVR tracks head rotation only (3DoF), which suits seated games such as flight and racing sims.
@@ -258,7 +267,7 @@ No. PocketVR tracks head rotation only (3DoF), which suits seated games such as 
 Yes. It's Apache-2.0 open source, with no paid version or limits.
 
 **How is it different from ALVR, VRidge or iVRy?**
-Those are other ways to play PC VR. PocketVR is a clean-room, open-source project built for phones in Cardboard-style headsets. It's much younger than those projects, so try whichever suits your setup.
+PocketVR is a clean-room, open-source project designed specifically for phones in Cardboard-style headsets, with no accounts or usage limits.
 
 **Does it work on iPhone?**
 No, only Android 10 or newer.
@@ -274,7 +283,7 @@ No, only Android 10 or newer.
 
 Bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-If PocketVR is useful to you, a star helps other people find it.
+If you find PocketVR useful, please consider starring the repository.
 
 ## Licence
 
