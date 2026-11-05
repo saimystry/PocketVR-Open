@@ -1,0 +1,405 @@
+{
+  "vcpkg_baseline": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+  "dependencies": [
+    {
+      "name": "libsodium",
+      "repository": "https://github.com/jedisct1/libsodium",
+      "revision": "77e1ce5d6dee871c49ef211222ba18ef0c486bda",
+      "license": "ISC",
+      "license_files": [
+        {
+          "path": "third_party/licenses/libsodium.txt",
+          "sha256": "508a76d186356c0dd807a670ef510964f8724557024796a2c426c6c0e19ab683"
+        },
+        {
+          "path": "third_party/licenses/libsodium-packaged.txt",
+          "sha256": "508a76d186356c0dd807a670ef510964f8724557024796a2c426c6c0e19ab683"
+        }
+      ],
+      "installed_license_sha256": "508a76d186356c0dd807a670ef510964f8724557024796a2c426c6c0e19ab683",
+      "version": "1.0.22",
+      "port_version": 1
+    },
+    {
+      "name": "gtest",
+      "repository": "https://github.com/google/googletest",
+      "revision": "063de7e9578f82b369302001269680b4b1553359",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path": "third_party/licenses/gtest.txt",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "third_party/licenses/gtest-packaged.txt",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        }
+      ],
+      "installed_license_sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+      "version": "1.18.0",
+      "port_version": 0
+    },
+    {
+      "name": "webview2",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "006cb1acf1d3061081a426ec04bd05ef51f42b5f",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path": "third_party/licenses/webview2-packaged.txt",
+          "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+        }
+      ],
+      "installed_license_sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55",
+      "version": "1.0.4314.35",
+      "port_version": 0
+    },
+    {
+      "name": "wil",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "fa919d6da75c4879e2dadf2ec3e7d4ed22a72de1",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/wil-packaged.txt",
+          "sha256": "27ebda9d51f0a56b7e281ccd8230a27236dcb51c05f64b07869ecf6e965d68b0"
+        }
+      ],
+      "installed_license_sha256": "27ebda9d51f0a56b7e281ccd8230a27236dcb51c05f64b07869ecf6e965d68b0",
+      "version": "1.0.260126.7",
+      "port_version": 0
+    },
+    {
+      "name": "nlohmann-json",
+      "repository": "https://github.com/nlohmann/json",
+      "revision": "55f93686c01528224f448c19128836e7df245f72",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/nlohmann-json.txt",
+          "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+        },
+        {
+          "path": "third_party/licenses/nlohmann-json-packaged.txt",
+          "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+        }
+      ],
+      "installed_license_sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+      "version": "3.12.0",
+      "port_version": 2
+    },
+    {
+      "name": "spdlog",
+      "repository": "https://github.com/gabime/spdlog",
+      "revision": "79524ddd08a4ec981b7fea76afd08ee05f83755d",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/spdlog.txt",
+          "sha256": "d678c20826e1392578508e1c78649a1e3c31bda05ef4388d967dbd654461b140"
+        },
+        {
+          "path": "third_party/licenses/spdlog-packaged.txt",
+          "sha256": "d678c20826e1392578508e1c78649a1e3c31bda05ef4388d967dbd654461b140"
+        }
+      ],
+      "installed_license_sha256": "d678c20826e1392578508e1c78649a1e3c31bda05ef4388d967dbd654461b140",
+      "version": "1.17.0",
+      "port_version": 1
+    },
+    {
+      "name": "imgui",
+      "repository": "https://github.com/ocornut/imgui",
+      "revision": "c1aaac65e896a45f81f47a4d68f9959e0f86c859",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/imgui.txt",
+          "sha256": "173506a2d6f7fb67990d257fb2507f188690eca39060c39469ae7bef43aae2a3"
+        },
+        {
+          "path": "third_party/licenses/imgui-packaged.txt",
+          "sha256": "53c566474bc659b7a494533c81caa77c456150934fc5d1c06af02962dc5588fb"
+        }
+      ],
+      "installed_license_sha256": "53c566474bc659b7a494533c81caa77c456150934fc5d1c06af02962dc5588fb",
+      "version": "1.93.0",
+      "port_version": 0
+    },
+    {
+      "name": "openvr",
+      "repository": "https://github.com/ValveSoftware/openvr",
+      "revision": "0924064316de3effbcd1acf1e309182a2deb1c05",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path": "third_party/licenses/openvr.txt",
+          "sha256": "f56ff606104d4ef18e617921a75c73ad73b5a1a1d70c69590c29de16919e04ad"
+        },
+        {
+          "path": "third_party/licenses/openvr-packaged.txt",
+          "sha256": "f56ff606104d4ef18e617921a75c73ad73b5a1a1d70c69590c29de16919e04ad"
+        }
+      ],
+      "installed_license_sha256": "f56ff606104d4ef18e617921a75c73ad73b5a1a1d70c69590c29de16919e04ad",
+      "version": "2.15.6",
+      "port_version": 0
+    },
+    {
+      "name": "amf",
+      "repository": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF",
+      "revision": "16f7d73e0b45c473e903e46981ed0b91efc4c091",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/amf.txt",
+          "sha256": "eb297397aaa455b5668ab67d216b83828466152dab123fa92384c6ec16b74170"
+        }
+      ]
+    },
+    {
+      "name": "nvenc",
+      "repository": "https://github.com/FFmpeg/nv-codec-headers",
+      "revision": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/nvenc.txt",
+          "sha256": "c726a065ff856f7e201c1f3fc987a2369e8c1d825dede5cc54d493e5a973b053"
+        }
+      ]
+    },
+    {
+      "name": "cardboard",
+      "repository": "https://github.com/googlevr/cardboard",
+      "revision": "67bee10850562bf8cbe563a22b47eca8ffd8f1eb",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path": "third_party/licenses/cardboard.txt",
+          "sha256": "fd47b8b87f5f105a2602652e946c02205a6bd0d37afbd624e2d539dd86a6c2ab"
+        },
+        {
+          "path": "third_party/licenses/cardboard-profile-notice.txt",
+          "sha256": "70adbfbb750796c77d798fd07b70f92559fa0fcbf9e3706311cc7f54ae1a1238"
+        }
+      ],
+      "vendored_files": [
+        {
+          "path": "third_party/cardboard_device.proto",
+          "url": "https://raw.githubusercontent.com/googlevr/cardboard/67bee10850562bf8cbe563a22b47eca8ffd8f1eb/proto/cardboard_device.proto",
+          "sha256": "161bc6259302506c89586029902703ea7da5dcb25e6cf79cd5a9c2170eebdea9"
+        }
+      ]
+    },
+    {
+      "name": "vcpkg-cmake",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-cmake.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-cmake-packaged.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        }
+      ],
+      "installed_license_sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460",
+      "version": "2025-08-07",
+      "port_version": 0
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-cmake-config.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-cmake-config-packaged.txt",
+          "sha256": "04b60f99a43bfd7fefdc8364b24aac704a2160cef969b75ba6a38b62dc4c4b70"
+        }
+      ],
+      "installed_license_sha256": "04b60f99a43bfd7fefdc8364b24aac704a2160cef969b75ba6a38b62dc4c4b70",
+      "version": "2026-07-21",
+      "port_version": 0
+    },
+    {
+      "name": "vcpkg-cmake-get-vars",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-cmake-get-vars.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-cmake-get-vars-packaged.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        }
+      ],
+      "installed_license_sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460",
+      "version": "2025-05-29",
+      "port_version": 0
+    },
+    {
+      "name": "vcpkg-make",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-make.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-make-packaged.txt",
+          "sha256": "a016cb0f66f4aca928d93608f34ba342ecaff292c652793113c8b007bb7b1ad9"
+        }
+      ],
+      "installed_license_sha256": "a016cb0f66f4aca928d93608f34ba342ecaff292c652793113c8b007bb7b1ad9",
+      "version": "2026-07-09",
+      "port_version": 2
+    },
+    {
+      "name": "vcpkg-msbuild",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-msbuild.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-msbuild-packaged.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        }
+      ],
+      "installed_license_sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460",
+      "version": "2023-08-08",
+      "port_version": 0
+    },
+    {
+      "name": "pkgconf",
+      "repository": "https://github.com/pkgconf/pkgconf",
+      "revision": "048d0a4f8dffb8e14fc9e9a595d2e9a503c4813b",
+      "license": "ISC",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/pkgconf-COPYING",
+          "sha256": "055a265b839672a62f590869b0a1f8e4f5147e8f073c9ba77b17b8d7ad653966"
+        },
+        {
+          "path": "third_party/licenses/pkgconf-packaged.txt",
+          "sha256": "f36059f961a1e6d1aa8c3f0e5c73c754f0d474c25c2506bb0d751c724d49bdcb"
+        }
+      ],
+      "installed_license_sha256": "f36059f961a1e6d1aa8c3f0e5c73c754f0d474c25c2506bb0d751c724d49bdcb",
+      "version": "3.0.3",
+      "port_version": 1
+    },
+    {
+      "name": "vcpkg-tool-meson",
+      "repository": "https://github.com/mesonbuild/meson",
+      "revision": "70598bb7825f0f804fb31ec2795de5e79e7692a0",
+      "license": "Apache-2.0 AND MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-tool-meson-COPYING",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-cmake.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-tool-meson-packaged.txt",
+          "sha256": "81ee2e796b6d8c8edbb385069124c1b5173abcc9b05e5bd1ebcdf776da740f53"
+        }
+      ],
+      "installed_license_sha256": "81ee2e796b6d8c8edbb385069124c1b5173abcc9b05e5bd1ebcdf776da740f53",
+      "version": "1.12.1",
+      "port_version": 0
+    },
+    {
+      "name": "vcpkg-pkgconfig-get-modules",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "revision": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+      "license": "MIT",
+      "development_only": true,
+      "license_files": [
+        {
+          "path": "third_party/licenses/vcpkg-pkgconfig-get-modules-LICENSE.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        },
+        {
+          "path": "third_party/licenses/vcpkg-pkgconfig-get-modules-packaged.txt",
+          "sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460"
+        }
+      ],
+      "installed_license_sha256": "1ee376fc340e0aa6ad6a3581c94126e741468705096ac92263048a21daa86460",
+      "version": "2024-04-03",
+      "port_version": 0
+    },
+    {
+      "name": "qrcodegen",
+      "repository": "https://github.com/nayuki/QR-Code-generator",
+      "revision": "bcfe1b018cec5f1f91b5705eca5bb4cdd34e9f8d",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "third_party/licenses/qrcodegen.txt",
+          "sha256": "8d8df151df2601eecb350c039900213b727d0a8f684a5347a9a40fe6806125f0"
+        }
+      ],
+      "vendored_files": [
+        {
+          "path": "third_party/qrcodegen/qrcodegen.cpp",
+          "url": "https://raw.githubusercontent.com/nayuki/QR-Code-generator/bcfe1b018cec5f1f91b5705eca5bb4cdd34e9f8d/cpp/qrcodegen.cpp",
+          "sha256": "8948b57053deb5d132bfc675ca2688b7abef9f03ec633c0de59770c945a66fc9"
+        },
+        {
+          "path": "third_party/qrcodegen/qrcodegen.hpp",
+          "url": "https://raw.githubusercontent.com/nayuki/QR-Code-generator/bcfe1b018cec5f1f91b5705eca5bb4cdd34e9f8d/cpp/qrcodegen.hpp",
+          "sha256": "b779c3b156cf7a57ce789d6fee4fc991ccc2913774d26c909d22bb8f26b2a793"
+        }
+      ]
+    },
+    {
+      "name": "inno-setup",
+      "repository": "https://github.com/jrsoftware/issrc",
+      "version": "6.7.4",
+      "revision": "c2913c993858a781fcb455bac8b8949c1c366cb8",
+      "license": "LicenseRef-Inno-Setup AND LicenseRef-RemObjects-Pascal-Script AND LicenseRef-LZMA-PublicDomain",
+      "license_files": [
+        {
+          "path": "third_party/licenses/inno-setup.txt",
+          "sha256": "2e5346868c2a18434489824e11d65c3031620f792fefc415d05f19cd441abf5c"
+        },
+        {
+          "path": "third_party/licenses/inno-lzma-notice.txt",
+          "sha256": "ac5b9aee6a22f07e6f98edc5402133aa7eb7bc1914b0f8cc966d8d1113c717e5"
+        },
+        {
+          "path": "third_party/licenses/inno-pascalscript.txt",
+          "sha256": "a08799bb2385a3af99a9bbb7c746d0ad9ac7dd07be0fb1473f2f4d1dc3e11bd1"
+        }
+      ]
+    }
+  ]
+}

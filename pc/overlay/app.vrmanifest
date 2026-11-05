@@ -1,0 +1,17 @@
+{
+  "applications": [
+    {
+      "app_key": "org.pocketvr.dashboard",
+      "launch_type": "binary",
+      "binary_path_windows": "pocketvr_overlay.exe",
+      "is_dashboard_overlay": true,
+      "auto_launch": true,
+      "strings": {
+        "en_us": {
+          "name": "PocketVR",
+          "description": "Local PocketVR status, settings, pairing and diagnostics"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+name: Build and verify
+# Manual until the user opts into hosted CI. Private backup pushes do not run builds.
+on:
+  workflow_dispatch:
+    inputs:
+      android_device_tests:
+        description: Run native tests on a configured self-hosted Windows runner with one authorized ARM64 phone
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Pin vcpkg registry
+        shell: pwsh
+        run: |
+          git -C "$env:VCPKG_INSTALLATION_ROOT" fetch origin 9a5dfef5d1a0438a7d24856a85bd60f309d355e9
+          git -C "$env:VCPKG_INSTALLATION_ROOT" checkout --detach 9a5dfef5d1a0438a7d24856a85bd60f309d355e9
+          & "$env:VCPKG_INSTALLATION_ROOT\bootstrap-vcpkg.bat" -disableMetrics
+      - name: Build and test Windows
+        shell: pwsh
+        env:
+          VCPKG_ROOT: ${{ env.VCPKG_INSTALLATION_ROOT }}
+          VCPKG_DISABLE_METRICS: '1'
+        run: |
+          $env:VCPKG_ROOT=$env:VCPKG_INSTALLATION_ROOT
+          $env:POCKETVR_BUILD_ROOT=Join-Path $env:RUNNER_TEMP 'pocketvr-builds'
+          ./scripts/build.ps1 -Configuration Release
+      - name: Audit all installed transitive packages
+        shell: pwsh
+        run: python scripts/license_audit.py --installed "$env:RUNNER_TEMP/pocketvr-builds/vcpkg-installed"
+  android:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Prepare pinned Android build tools
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $tools=Join-Path $env:RUNNER_TEMP 'pocketvr-tools'
+          New-Item -ItemType Directory -Path $tools -Force | Out-Null
+          $archive=Join-Path $tools 'cmake.zip'
+          Invoke-WebRequest https://github.com/Kitware/CMake/releases/download/v4.4.5/cmake-4.4.5-windows-x86_64.zip -OutFile $archive
+          if ((Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant() -ne '326c826486d46a23cf9d5a1c9ee3a567d427bdd02c4a34071937a2a675cff004') { throw 'CMake checksum mismatch' }
+          Expand-Archive -LiteralPath $archive -DestinationPath $tools
+          Remove-Item -LiteralPath $archive
+          $cmake=Join-Path $tools 'cmake-4.4.5-windows-x86_64'
+          python scripts/setup_android_gradle.py --tools $tools
+          if ($LASTEXITCODE) { throw 'Gradle verification failed' }
+          $env:JAVA_HOME=$env:JAVA_HOME_17_X64
+          $env:PATH="$cmake/bin;$env:JAVA_HOME/bin;$env:PATH"
+          & "$env:ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager.bat" 'platforms;android-34' 'build-tools;36.0.0' 'ndk;26.3.11579264'
+          if ($LASTEXITCODE) { throw 'SDK installation failed' }
+          git -C "$env:VCPKG_INSTALLATION_ROOT" fetch origin 9a5dfef5d1a0438a7d24856a85bd60f309d355e9
+          git -C "$env:VCPKG_INSTALLATION_ROOT" checkout --detach 9a5dfef5d1a0438a7d24856a85bd60f309d355e9
+          & "$env:VCPKG_INSTALLATION_ROOT/bootstrap-vcpkg.bat" -disableMetrics
+          if ($LASTEXITCODE) { throw 'vcpkg setup failed' }
+          @("sdk.dir=$($env:ANDROID_HOME.Replace('\','/'))", "cmake.dir=$($cmake.Replace('\','/'))") | Set-Content android/local.properties
+          "POCKETVR_BUILD_ROOT=$env:RUNNER_TEMP/pocketvr-builds" >> $env:GITHUB_ENV
+          "GRADLE_USER_HOME=$env:RUNNER_TEMP/pocketvr-gradle" >> $env:GITHUB_ENV
+          "VCPKG_ROOT=$env:VCPKG_INSTALLATION_ROOT" >> $env:GITHUB_ENV
+          "VCPKG_DISABLE_METRICS=1" >> $env:GITHUB_ENV
+          "JAVA_HOME=$env:JAVA_HOME" >> $env:GITHUB_ENV
+          "$cmake/bin" >> $env:GITHUB_PATH
+          "$env:JAVA_HOME/bin" >> $env:GITHUB_PATH
+          "$tools/gradle-9.8.2/bin" >> $env:GITHUB_PATH
+      - name: Build app and native test APKs and audit packaged dependencies
+        shell: pwsh
+        run: ./scripts/build_android.ps1
+  android-device:
+    if: ${{ inputs.android_device_tests }}
+    runs-on: [self-hosted, Windows, pocketvr-android-arm64]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Build and execute actual ARM64 native tests
+        shell: pwsh
+        run: ./scripts/build_android.ps1 -RunDeviceTests

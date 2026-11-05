@@ -1,0 +1,27 @@
+/build/
+/out/
+/.vs/
+/.idea/
+/CMakeUserPresets.json
+/vcpkg_installed/
+**/.gradle/
+**/.cxx/
+**/build/
+/android/local.properties
+*.user
+*.log
+*.apk
+*.zip
+__pycache__/
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+identity.dpapi
+paired.json
+paired.lock
+
+# Kotlin compiler setup state is generated and machine-local.
+.kotlin/
+*.salive

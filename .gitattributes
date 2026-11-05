@@ -1,0 +1,15 @@
+* text=auto eol=lf
+/third_party/licenses/** -text whitespace=-trailing-space,-blank-at-eof,-space-before-tab,cr-at-eol
+/LICENSE -text
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+/android/gradlew.bat text eol=lf
+
+# Preserve exact upstream bytes for the vendored-source hash audit.
+/third_party/qrcodegen/** -text whitespace=-trailing-space,-blank-at-eof,-space-before-tab
+/third_party/cardboard_device.proto -text

@@ -1,0 +1,9 @@
+LZMA SDK decoder in Inno Setup 6.7.4
+
+Igor Pavlov, public domain. Upstream declaration (7zTypes.h):
+/* 7zTypes.h -- Basic types
+2024-01-24 : Igor Pavlov : Public domain */
+
+Source: https://github.com/jrsoftware/issrc/blob/c2913c993858a781fcb455bac8b8949c1c366cb8/Components/Lzma2/7zTypes.h
+LZMA SDK license: https://www.7-zip.org/sdk.html
+Only the reduced decoder in Inno Setup is shipped, not optional 7-Zip extraction libraries.

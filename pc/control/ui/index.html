@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PocketVR</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<nav>
+  <div class="brand"><svg viewBox="0 0 108 108" aria-hidden="true"><path fill="currentColor" d="M30 38h48a10 10 0 0 1 10 10v14a10 10 0 0 1-10 10H67.5a10 10 0 0 1-8.6-4.9l-1.5-2.6a4 4 0 0 0-6.8 0l-1.5 2.6a10 10 0 0 1-8.6 4.9H30a10 10 0 0 1-10-10V48a10 10 0 0 1 10-10z"/></svg>PocketVR</div>
+  <button class="tab active" data-page="home">Home</button>
+  <button class="tab" data-page="phone">Phone</button>
+  <button class="tab" data-page="settings">Settings</button>
+  <button class="tab" data-page="help">Help</button>
+</nav>
+<main>
+  <section id="home" class="page active">
+    <div class="hero">
+      <div class="status"><span id="dot" class="dot"></span><div><h1 id="headline">Starting…</h1><p id="subline"></p></div></div>
+      <button id="mainAction" class="primary big" hidden></button>
+    </div>
+    <div id="approval" class="card" hidden>
+      <h2>A new phone wants to connect</h2>
+      <p id="approvalText" class="note"></p>
+      <div class="actions"><button id="approve">Allow</button><button id="refuse">Don't allow</button></div>
+    </div>
+    <div id="live" class="grid" hidden>
+      <div class="stat"><label>Connection</label><b id="sRoute">–</b></div>
+      <div class="stat"><label>Picture</label><b id="sFormat">–</b></div>
+      <div class="stat"><label>Bitrate</label><b id="sBitrate">–</b></div>
+      <div class="stat"><label>Frame rate</label><b id="sFps">–</b></div>
+      <div class="stat"><label>Delay</label><b id="sDelay">–</b></div>
+      <div class="stat"><label>Data per frame</label><b id="sFrame">–</b></div>
+    </div>
+    <div id="actions" class="actions" hidden>
+      <button id="recenter">Recenter view</button>
+      <button id="controllers">Controller and mouse</button>
+    </div>
+  </section>
+
+  <section id="phone" class="page">
+    <h1>Phone</h1>
+    <div class="card">
+      <h2>Install the phone app</h2>
+      <p>Plug in your phone with a USB cable. The first time, turn on USB debugging on the phone.</p>
+      <p id="adbState" class="note"></p>
+      <div class="row"><button id="installApk" class="primary">Install on phone</button><button id="debugHelp">How to turn on USB debugging</button></div>
+      <ol id="debugSteps" hidden>
+        <li>Open <b>Settings</b>, then <b>About phone</b>.</li>
+        <li>Tap <b>Build number</b> seven times.</li>
+        <li>Go back to <b>Settings</b>, open <b>System</b>, then <b>Developer options</b>.</li>
+        <li>Turn on <b>USB debugging</b>, then tap <b>Allow</b> when the phone asks.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>Connect by QR code</h2>
+      <p>If the phone can't find this PC, open Settings on the phone and tap <b>Scan the code on your PC</b>.</p>
+      <div id="qrBox" class="qr"></div>
+      <p id="qrText" class="note"></p>
+    </div>
+  </section>
+
+  <section id="settings" class="page">
+    <h1>Settings</h1>
+    <div class="card">
+      <h2>Picture quality</h2>
+      <div class="choices" id="quality">
+        <button data-preset="fast"><b>Smooth</b><span>Lowest delay</span></button>
+        <button data-preset="balanced"><b>Balanced</b><span>Recommended</span></button>
+        <button data-preset="quality"><b>Sharp</b><span>Best picture</span></button>
+      </div>
+      <div class="line"><div><b>Adjust quality automatically</b><span>Lowers quality if the connection or PC falls behind</span></div><label class="switch"><input type="checkbox" id="adaptive"><i></i></label></div>
+    </div>
+    <div class="card">
+      <h2>Profiles</h2>
+      <div class="choices" id="profiles"></div>
+      <div class="line"><div><b>Save current settings</b><span>Keeps your picture and lens settings under a name</span></div>
+        <div class="actions"><input id="profileName" type="text" maxlength="40" placeholder="Name"><button id="saveProfile">Save</button></div></div>
+    </div>
+    <details class="card" id="advanced">
+      <summary>Advanced settings</summary>
+      <div id="groups"></div>
+      <div class="row"><button id="restore">Restore defaults</button></div>
+    </details>
+  </section>
+
+  <section id="help" class="page">
+    <h1>Help</h1>
+    <div class="card">
+      <h2>Fix a problem</h2>
+      <div class="list">
+        <button id="firewall"><b>Repair firewall</b><span>Use this if the phone can't reach the PC</span></button>
+        <button id="restartVr"><b>Restart SteamVR</b><span>Use this if the picture stays black</span></button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Support files</h2>
+      <div class="list">
+        <button id="logs"><b>Open logs folder</b><span>Files that record what PocketVR did</span></button>
+        <button id="diag"><b>Save a support file</b><span>Collects logs and settings into one ZIP</span></button>
+      </div>
+    </div>
+    <p class="note">Game audio plays on this PC. PocketVR is free and has no time limits.</p>
+  </section>
+</main>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

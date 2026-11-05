@@ -1,0 +1,5 @@
+Cardboard DeviceParams schema
+Copyright 2019 Google LLC
+Licensed under the Apache License, Version 2.0; see LICENSE.
+Source: https://github.com/googlevr/cardboard/blob/67bee10850562bf8cbe563a22b47eca8ffd8f1eb/proto/cardboard_device.proto
+PocketVR uses a bounded independent wire decoder and shared renderer; no Unity or full Cardboard runtime is included.

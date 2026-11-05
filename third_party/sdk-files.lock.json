@@ -1,0 +1,350 @@
+[
+  {
+    "sdk": "amf",
+    "path": "components/AMFXInput.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/AMFXInput.h",
+    "sha256": "41303e3038e8e5717e174cd3e37625163d244bd3ed0bc2d47d8ad347cce65cc5"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/Ambisonic2SRenderer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/Ambisonic2SRenderer.h",
+    "sha256": "27770ae77d2f7a16eca9ab1f8b9ce87cf0c0350425b950bdd39189c2c91a519a"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/AudioCapture.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/AudioCapture.h",
+    "sha256": "05a9ebc32217e69b6c4659f4744dbda9e5a2792f3e56bc1bcf61c15dcfd46cab"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/Capture.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/Capture.h",
+    "sha256": "bbe91a1e744685a36269d3b6af9cd36d9716ee748c8d0ed95255a6a42b46892f"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/ChromaKey.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/ChromaKey.h",
+    "sha256": "a3a89490d44adaffc2fa2cccc14313f8f65e5af7a6431d89d85bd80e36c628a1"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/ColorSpace.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/ColorSpace.h",
+    "sha256": "2f6887d14516ebdcf034d59e39235f5d9974533ddb0b04d685c0c3b6d397d3d6"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/Component.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/Component.h",
+    "sha256": "f3f18680d55a65fdf5e0351d3fde1dcd9bdd2d6caec268c8c915c4227ffa1edc"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/ComponentCaps.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/ComponentCaps.h",
+    "sha256": "2479eb2a6174a1b63552c509abac1b701eddcab5a5eac5a7f4d9f40274d588b4"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/CursorCapture.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/CursorCapture.h",
+    "sha256": "7c22337ff313320bd7fe20ef0fb00756735012367a5daa7c621725030f578863"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/DisplayCapture.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/DisplayCapture.h",
+    "sha256": "693c8e491f90eaffd226c1f6b2da37d3a5ef1d3c610e554647f7d0b699832727"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGAudioConverter.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGAudioConverter.h",
+    "sha256": "9dde7e850c8bdecda82b0cee1b331294f6cc91b32b1d1504344a023cd4dda8af"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGAudioDecoder.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGAudioDecoder.h",
+    "sha256": "92f50d789bc18d5ebd143b2925e124594a89110eef7efaa8189eb063bf2f3aa8"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGAudioEncoder.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGAudioEncoder.h",
+    "sha256": "2493067de9b3f540ffaae8a6466e57ef75af4772f037a81785b11ee9511029f5"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGComponents.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGComponents.h",
+    "sha256": "87a9ae9480c3af6210b1282d1768e36673fcc1ef4970afa6edaa74481cf0831b"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGEncoderAV1.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGEncoderAV1.h",
+    "sha256": "5d64b7d2d50ca17ba601885dcdb51bb16ef4dccf88323437967e8524f26194bc"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGEncoderH264.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGEncoderH264.h",
+    "sha256": "3dae38db05bc55af525000c28559ff76625e0cddc2ad2c4c2af52eab69e915bc"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGEncoderHEVC.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGEncoderHEVC.h",
+    "sha256": "3ad5cc5d3284b253a671499efa29c7a46b83a6e6373aad7142c7adcbfae31875"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGFileDemuxer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGFileDemuxer.h",
+    "sha256": "be992e14086b04e2a7b5503471a6c262c58fda163c45ad6d00f8e425d9f4a820"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGFileMuxer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGFileMuxer.h",
+    "sha256": "3fefbe1aa7aaa4c000a97efb2e5ba26dc87ec15d11b07ceb0f43c768a1d589a2"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FFMPEGVideoDecoder.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FFMPEGVideoDecoder.h",
+    "sha256": "297b0ab2291baeb44f30f03ffbf791a5603289ab34f625d60a33150f2be1f7b6"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/FRC.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/FRC.h",
+    "sha256": "674eadcfab954edb692f8cc453737eaef6c2beeb0c8046aaa8c403e1b2e95b6e"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/HQScaler.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/HQScaler.h",
+    "sha256": "b63e856b55db7a6853f444a6d4d32cfe006d9e0fb1d9be1b3079557534738591"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/MediaSource.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/MediaSource.h",
+    "sha256": "c4e168d29e3f7d9318435958c3c784ad4c497159a617bd7a5598a2951b1b15f6"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/PreAnalysis.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/PreAnalysis.h",
+    "sha256": "6824fd31dc6a42ad4e1cce29bd2bf190e769d6d5a4427fba57cefa697c9a9bd7"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/PreProcessing.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/PreProcessing.h",
+    "sha256": "5a01d71e128cf8bcaa4945fe76d9aad0156c409df3b25616a75645ef15972dc3"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/SupportedCodecs.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/SupportedCodecs.h",
+    "sha256": "550900e56c8254bf9c42d1b1d6538a390f7f7d3bf4826ee385b019585cb6cd22"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VQEnhancer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VQEnhancer.h",
+    "sha256": "146e7cd35acc846f6b75b696bbe13a5d790f885bc23d9913e7de66f515da789b"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoCapture.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoCapture.h",
+    "sha256": "08f0162a631833f847d1b4b751e41e28b147a79ed19545b43631222d22e74507"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoConverter.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoConverter.h",
+    "sha256": "b0e173fbfe920a4923f461c1bffc73d1cbc06d54b676647dcd6ec300a0beee65"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoDecoderUVD.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoDecoderUVD.h",
+    "sha256": "588622f7d945c85c1ed334b497174fd46031e01664338bcf59c4b242920df886"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoEncoderAV1.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoEncoderAV1.h",
+    "sha256": "4e31ddbe9ac074075c6d5aa7501f1d66082c71b1213ebd5fd36f14e068b461d1"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoEncoderHEVC.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoEncoderHEVC.h",
+    "sha256": "3d32657bc7b2df1b0e5449dca47115a13db5264c57cf18db6d547c1a789abf3d"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoEncoderVCE.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoEncoderVCE.h",
+    "sha256": "f094a9b1ec77a0be1bc8f0012a767e916418899b66e33b6e3f08efb31e87d404"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/VideoStitch.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/VideoStitch.h",
+    "sha256": "9bc2d8477d67693b0cd4d433fbc6a5812277190f67be5f188f0206b463f256ec"
+  },
+  {
+    "sdk": "amf",
+    "path": "components/ZCamLiveStream.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/components/ZCamLiveStream.h",
+    "sha256": "3c6e6515a8fec111eb1847e349124a8c66c1e78be2d148bc0b8f85b9d9994e2d"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/AudioBuffer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/AudioBuffer.h",
+    "sha256": "c9382c911fd3b5e12105c1d2a67eb11e62e9475068825222a285bb1314ac0ddd"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Buffer.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Buffer.h",
+    "sha256": "1ad18d3c813c3f81a836d393bbe86dfc0b7a1d7f04a77a272eb1461ce85ae3a4"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Compute.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Compute.h",
+    "sha256": "ef5721466fe48e1c038151018699519761e6e351e66e76a5de65386924653e20"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/ComputeFactory.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/ComputeFactory.h",
+    "sha256": "50acf69fb670bc6cf093384d1b698bf9e44cda8dd49e02ef24eacfb86ad8ccae"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Context.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Context.h",
+    "sha256": "f9b4acb784038aad234ddec490e5f6ad6dacc4b14794eb84f3523d56dc3d6dd2"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/CurrentTime.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/CurrentTime.h",
+    "sha256": "76d16ba57d48ae9e457f3d904698a1e7c625007ac8887db9bcecdb90fd36d835"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/D3D12AMF.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/D3D12AMF.h",
+    "sha256": "f05771305598b534e1efa0dd28825267ea87418c477b198e373f6764d060c666"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Data.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Data.h",
+    "sha256": "eaac4d80dd3215638c70f8a4ca01791d26d9df77586f665a772bb51907a8035b"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Debug.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Debug.h",
+    "sha256": "56666589bf6ad20c6286a048da751c2d7722f70c73d962ee3c205a6d709b6aff"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Dump.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Dump.h",
+    "sha256": "a5e0fa9290cae767a4d135962ee5e30302e65e8d0ca5e016c620e72b759c86c6"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Factory.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Factory.h",
+    "sha256": "644814e97dd359f08d66a73748b60262149b106d28423c31b573cecb4be57979"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Interface.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Interface.h",
+    "sha256": "304f6d6077e9b0733859d44a5e43a343ae374c8fe72c7d79741c0aca89c21162"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Plane.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Plane.h",
+    "sha256": "5ad5165e9de2afcfc2da828e8704c838b1f82e8ead7422fbcfc32c758672e1f3"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Platform.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Platform.h",
+    "sha256": "91f84c9fbd8aaf43909af373acff8e03c14406e44ac20217f0d115da7e09d7e1"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/PropertyStorage.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/PropertyStorage.h",
+    "sha256": "0059b787e78cd7c4e57212ccaab56ad7e17e9474a31337da0eac5b2d056a5dd8"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/PropertyStorageEx.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/PropertyStorageEx.h",
+    "sha256": "871136e46586baa1fc77121935b503aaa16523d006c3e435ce50698605675fad"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Result.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Result.h",
+    "sha256": "a469ff33875484b5762199da757819056ff4a7535bfdcec1f4cf2ffc403b98f2"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Surface.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Surface.h",
+    "sha256": "7f0c99bbfe156169440031f75b0e37c28c435dd140ecb4e5089d0b1f01912c47"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Trace.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Trace.h",
+    "sha256": "ae8c5fee671f02b90d3ccab312cfa6f74424351f070a7dd4ed7aba437fd55c30"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Variant.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Variant.h",
+    "sha256": "72841e751595a2a8f62c8ac4a3e630b181411af8e0741d716bbe3379c9bf9a99"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/Version.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/Version.h",
+    "sha256": "09153735e3559a7d279c06f6d202f4baf3e6848c5f50a78dd01ea70a668ca834"
+  },
+  {
+    "sdk": "amf",
+    "path": "core/VulkanAMF.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-LibrariesAndSDKs/AMF/16f7d73e0b45c473e903e46981ed0b91efc4c091/amf/public/include/core/VulkanAMF.h",
+    "sha256": "385b8ad96b59e2d67a6f7a78c6aa660a2f2cdad1bf8c7cadcd83387a3ad4996c"
+  },
+  {
+    "sdk": "nvenc",
+    "path": "nvEncodeAPI.h",
+    "url": "https://raw.githubusercontent.com/FFmpeg/nv-codec-headers/c69278340ab1d5559c7d7bf0edf615dc33ddbba7/include/ffnvcodec/nvEncodeAPI.h",
+    "sha256": "4677a397e3ec5300a6b38bf49cba42bb63a922ab26f24bc63a05ed08857cba16"
+  }
+]

@@ -1,0 +1,9 @@
+org.jetbrains:annotations:13.0
+Source: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0-sources.jar
+
+Copyright 2000-2009 JetBrains s.r.o.
+Copyright 2000-2012 JetBrains s.r.o.
+Copyright 2000-2013 JetBrains s.r.o.
+Copyright 2006 Sascha Weinreuter
+
+Licensed under the Apache License, Version 2.0. See the root LICENSE file.

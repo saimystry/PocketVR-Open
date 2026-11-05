@@ -1,0 +1,32 @@
+{
+  "jsonid": "input_profile",
+  "controller_type": "vive_controller",
+  "device_class": "TrackedDeviceClass_Controller",
+  "resource_root": "pocketvr",
+  "driver_name": "pocketvr",
+  "legacy_binding": "{pocketvr}/input/pocketvr_legacy_bindings_vive_controller.json",
+  "input_bindingui_mode": "controller_handed",
+  "should_show_binding_errors": true,
+  "input_bindingui_left": {
+    "transform": "scale(-1,1)",
+    "image": "{pocketvr}/icons/pocketvr_controller.svg"
+  },
+  "input_bindingui_right": {
+    "image": "{pocketvr}/icons/pocketvr_controller.svg"
+  },
+  "input_source": {
+    "/input/trigger": {"type": "trigger", "click": true, "value": true, "binding_image_point": [30, 50], "order": 1},
+    "/input/trackpad": {"type": "trackpad", "click": true, "touch": true, "binding_image_point": [60, 90], "order": 2},
+    "/input/grip": {"type": "button", "click": true, "binding_image_point": [90, 130], "order": 3},
+    "/input/application_menu": {"type": "button", "click": true, "binding_image_point": [44, 48], "order": 4},
+    "/input/system": {"type": "button", "click": true, "binding_image_point": [44, 128], "order": 5},
+    "/pose/raw": {"type": "pose", "binding_image_point": [60, 160], "order": 6},
+    "/output/haptic": {"type": "vibration", "binding_image_point": [76, 124], "order": 7}
+  },
+  "default_bindings": [
+    {
+      "app_key": "openvr.component.vrcompositor",
+      "binding_url": "pocketvr_vrcompositor_bindings_vive_controller.json"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "6.7.4",
+  "source_revision": "c2913c993858a781fcb455bac8b8949c1c366cb8",
+  "download": "https://github.com/jrsoftware/issrc/releases/download/is-6_7_4/innosetup-6.7.4.exe",
+  "download_sha256": "a549929319f9120716677c685535ca4671e4b937b5fdc87e2585f32d8eb30e8c",
+  "publisher": "Pyrsys B.V.",
+  "files": {
+    "Compil32.exe": "cc265088e69b4f39ecc8d0ffe92d01e4a24b2fd4712bb7533735942efb3e12f3",
+    "Default.isl": "42a5f6f7dbbddf26cc278f67db5d894235ce1d126a6856702e31bd02023a1316",
+    "is7z.dll": "f97cda058bfe97a7e9ced5cde7018bbc26e35155c3c7405c6146808f8d06806d",
+    "is7zxa.dll": "e3cef67858843c554100126f04932be327097777865e4eb82951dd97cdb28942",
+    "is7zxr.dll": "728b368dc4f2831cc4d13291f46eeaf9f89b7e3a91356cf793c330e953b8e17b",
+    "isbunzip.dll": "31d04c1e4bfdfa34704c142fa98f80c0a3076e4b312d6ada57c4be9d9c7dcf26",
+    "isbzip.dll": "8072e83385afc4a84006271a87a11fc0a22b149cbd77322669ca56c470d28ced",
+    "ISCC.exe": "f02fa0e5f237b47d7ed1edae9b991866ec94fe02af61eb6a73e94f92fe8e0604",
+    "ISCmplr.dll": "236555054ca65194c69544b4ef1d49ea345259745f5c4a2005aca7b5674e7cff",
+    "islzma.dll": "8af307ce3738ab1d37cc7e76b2f76615e2045597d4367c3e40d52b5f2fbd353d",
+    "islzma32.exe": "fd977c3ac44c56997d2b4fd6647e97e2457c43991a6ae26a4b2252c0eabdfebb",
+    "islzma64.exe": "87a50495aff580b78cad57906a765d3cf28ca508cfa95c24c1247c286ddf71b2",
+    "ISPP.dll": "140b2d822bf30ed8aa3fed64764b2d2b92a80e0b9aafc1b8ff3e409706b9207e",
+    "ISPPBuiltins.iss": "bc765e1121a95dc602ca1248b484418cecc6db9d4b6f4dae58e9a2c35262527c",
+    "isscint.dll": "ddd2748bc79122a67eed77f6039f6508245e0aa7f0fdbbfca99d1e922a1e8ce4",
+    "ISSigTool.exe": "574ddba0827ce5635e47bacf4033155667f6faf66675a6ea95df9a8fc65c8a07",
+    "isunzlib.dll": "8287d0e287a66ee78537c8d1d98e426562b95c50f569b92cea9ce36a9fa57e64",
+    "iszlib.dll": "14c0d4a2a41572384f8309cdf03de5c6e7ed46bef64cce70d989b2665eff1a47",
+    "Setup.e32": "0c94d43e2c0f4d8371a2e1813b5446f3bc85ece3211dc4a6676159b534bbc483",
+    "SetupCustomStyle.e32": "6848503904920ba8dc5e0d5af45091c081d1f03ac85d454db0ad31e522c92b31",
+    "SetupLdr.e32": "998c58046b0808e75a030859962e1fe1ea600e8a5cf4646b09aadce77342c1a9",
+    "SetupLdr.e64": "76238ce87139bd7d888b72b5694a4e1d5f3f73e8c9a62cc8a2a0e124e455e4f3"
+  }
+}

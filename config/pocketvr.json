@@ -1,0 +1,100 @@
+{
+  "connection": {
+    "mode": "auto",
+    "control_port": 9943,
+    "media_port": 9944
+  },
+  "video": {
+    "codec": "auto",
+    "preset": "balanced",
+    "fps": 60,
+    "resolution": "auto",
+    "render_scale": 1,
+    "bitrate_mbps": 60,
+    "min_bitrate_mbps": 15,
+    "max_bitrate_mbps": 120,
+    "adaptive": true,
+    "slices": 2,
+    "send_spread_pct": 60
+  },
+  "fec": {
+    "adaptive": true,
+    "ratio_pct": 10
+  },
+  "display": {
+    "ipd_mm": 63.9,
+    "fov_scale": 1,
+    "eye_size": 1.35,
+    "vignette_strength": 0.3,
+    "vignette_size": 0.85,
+    "vignette_softness": 0.25,
+    "vignette_dynamic": false,
+    "chromatic_correction": false,
+    "edge_mode": "black"
+  },
+  "lens": {
+    "profile": "generic_cardboard_v2",
+    "distortion_tweak": 0,
+    "k1": 0.34,
+    "k2": 0.55,
+    "screen_to_lens_m": 0.039,
+    "inter_lens_distance_m": 0.0639,
+    "screen_width_m": 0.134,
+    "screen_height_m": 0.062,
+    "vertical_offset_m": 0,
+    "fov_left_deg": 89,
+    "fov_right_deg": 89,
+    "fov_bottom_deg": 89,
+    "fov_top_deg": 89
+  },
+  "tracking": {
+    "fusion": "gyro_accel",
+    "rate_hz": 400,
+    "yaw_correction": "slow_autocenter",
+    "max_prediction_ms": 80,
+    "prediction_ms": "auto",
+    "eye_height_m": 1.65
+  },
+  "reprojection": {
+    "enabled": true
+  },
+  "pacing": {
+    "target_lead_ms": 4
+  },
+  "input": {
+    "mapping": "xbox",
+    "recenter_hotkey": "Ctrl+Alt+R",
+    "bind_a": "left_pad",
+    "bind_b": "right_pad",
+    "bind_x": "left_menu",
+    "bind_y": "right_menu",
+    "bind_left_bumper": "left_grip",
+    "bind_right_bumper": "right_grip",
+    "bind_left_stick": "left_pad",
+    "bind_right_stick": "right_pad",
+    "bind_start": "system",
+    "bind_select": "recenter",
+    "bind_volume_up": "right_trigger",
+    "bind_volume_down": "right_grip",
+    "bind_touch_left": "left_trigger",
+    "bind_touch_right": "right_trigger",
+    "bind_touch_menu": "system",
+    "bind_recenter": "recenter"
+  },
+  "ui": {
+    "stats_overlay": "off"
+  },
+  "power": {
+    "keep_awake": true,
+    "thermal_guard": true
+  },
+  "security": {
+    "encrypt_media": true
+  },
+  "debug": {
+    "log_level": "info",
+    "dump_frames": false,
+    "latency_log": false,
+    "test_pattern": false
+  }
+}

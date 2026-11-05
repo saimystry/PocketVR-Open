@@ -1,0 +1,6 @@
+{
+  "name": "pocketvr-android-native",
+  "version-string": "0.1.0",
+  "builtin-baseline": "9a5dfef5d1a0438a7d24856a85bd60f309d355e9",
+  "dependencies": ["libsodium", "nlohmann-json", "gtest"]
+}

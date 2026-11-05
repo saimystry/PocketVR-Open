@@ -1,0 +1,18 @@
+{
+  "agp": "9.5.0",
+  "gradle": "9.8.2",
+  "gradle_revision": "8de7bcf76e785507ad92f0741ab9235a430c95e6",
+  "distribution_url": "https://services.gradle.org/distributions/gradle-9.8.2-bin.zip",
+  "distribution_sha256": "21bd5da2de49b642904077f38c0efdc7778e92b3ed0889392dca61b97e389607",
+  "wrapper_sha256": "3b8a25775a69158b5ad2b1d17a80a88dc7b40a352a73eb27d06c612a7ce68e98",
+  "build_tools": "36.0.0",
+  "ndk": "26.3.11579264",
+  "compile_sdk": 34,
+  "target_sdk": 34,
+  "min_sdk": 29,
+  "notes": "Development tools only. AGP/Gradle: Apache-2.0; Android SDK/NDK tools subject to their separately accepted Google SDK terms. They are not packaged in PocketVR.",
+  "wrapper_scripts_sha256": {
+    "gradlew": "e01b5c97892572c82405c02b96a3382379100e7d825ce7c48883d95c26928750",
+    "gradlew.bat": "ad2fac6060c5b929bed15d428e09483e52747d0120874346861ad4ec324af64c"
+  }
+}

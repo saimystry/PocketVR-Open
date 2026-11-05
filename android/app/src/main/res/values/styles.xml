@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PocketVR" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorAccent">#6C8CFF</item>
+        <item name="android:colorPrimary">#0B0F17</item>
+        <item name="android:colorPrimaryDark">#0B0F17</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">#0B0F17</item>
+        <item name="android:navigationBarColor">#0B0F17</item>
+    </style>
+    <color name="background">#0B0F17</color>
+</resources>

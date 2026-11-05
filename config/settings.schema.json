@@ -1,0 +1,842 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PocketVR v1 settings",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "wifi",
+            "usb_adb",
+            "usb_tether"
+          ]
+        },
+        "control_port": {
+          "type": "integer",
+          "default": 9943,
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "media_port": {
+          "type": "integer",
+          "default": 9944,
+          "minimum": 1,
+          "maximum": 65535
+        }
+      },
+      "required": [
+        "mode",
+        "control_port",
+        "media_port"
+      ]
+    },
+    "video": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "codec": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "h264",
+            "hevc"
+          ]
+        },
+        "preset": {
+          "type": "string",
+          "default": "balanced",
+          "enum": [
+            "fast",
+            "balanced",
+            "quality"
+          ]
+        },
+        "fps": {
+          "type": "integer",
+          "default": 60,
+          "enum": [
+            30,
+            45,
+            60
+          ]
+        },
+        "resolution": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "2160x1080",
+            "1920x960",
+            "1836x918",
+            "1512x756",
+            "1280x640",
+            "1188x594"
+          ]
+        },
+        "render_scale": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0.5,
+          "maximum": 1.5
+        },
+        "bitrate_mbps": {
+          "type": "number",
+          "default": 60,
+          "minimum": 10,
+          "maximum": 150
+        },
+        "min_bitrate_mbps": {
+          "type": "number",
+          "default": 15,
+          "minimum": 10,
+          "maximum": 150
+        },
+        "max_bitrate_mbps": {
+          "type": "number",
+          "default": 120,
+          "minimum": 10,
+          "maximum": 150
+        },
+        "adaptive": {
+          "type": "boolean",
+          "default": true
+        },
+        "slices": {
+          "type": "integer",
+          "default": 2,
+          "minimum": 1,
+          "maximum": 4
+        },
+        "send_spread_pct": {
+          "type": "integer",
+          "default": 60,
+          "minimum": 0,
+          "maximum": 80
+        }
+      },
+      "required": [
+        "codec",
+        "preset",
+        "fps",
+        "resolution",
+        "render_scale",
+        "bitrate_mbps",
+        "min_bitrate_mbps",
+        "max_bitrate_mbps",
+        "adaptive",
+        "slices",
+        "send_spread_pct"
+      ]
+    },
+    "fec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "adaptive": {
+          "type": "boolean",
+          "default": true
+        },
+        "ratio_pct": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 0,
+          "maximum": 25
+        }
+      },
+      "required": [
+        "adaptive",
+        "ratio_pct"
+      ]
+    },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ipd_mm": {
+          "type": "number",
+          "default": 63.9,
+          "minimum": 50,
+          "maximum": 80
+        },
+        "fov_scale": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0.7,
+          "maximum": 1.3
+        },
+        "eye_size": {
+          "type": "number",
+          "default": 1.35,
+          "minimum": 0.7,
+          "maximum": 1.6
+        },
+        "vignette_strength": {
+          "type": "number",
+          "default": 0.3,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "vignette_size": {
+          "type": "number",
+          "default": 0.85,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "vignette_softness": {
+          "type": "number",
+          "default": 0.25,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "vignette_dynamic": {
+          "type": "boolean",
+          "default": false
+        },
+        "chromatic_correction": {
+          "type": "boolean",
+          "default": false
+        },
+        "edge_mode": {
+          "type": "string",
+          "default": "black",
+          "enum": [
+            "black",
+            "clamp",
+            "mirror"
+          ]
+        }
+      },
+      "required": [
+        "ipd_mm",
+        "fov_scale",
+        "eye_size",
+        "vignette_strength",
+        "vignette_size",
+        "vignette_softness",
+        "vignette_dynamic",
+        "chromatic_correction",
+        "edge_mode"
+      ]
+    },
+    "lens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "type": "string",
+          "default": "generic_cardboard_v2",
+          "enum": [
+            "qr",
+            "generic_cardboard_v2",
+            "manual"
+          ]
+        },
+        "distortion_tweak": {
+          "type": "number",
+          "default": 0,
+          "minimum": -0.3,
+          "maximum": 0.3
+        },
+        "k1": {
+          "type": "number",
+          "default": 0.34,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "k2": {
+          "type": "number",
+          "default": 0.55,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "screen_to_lens_m": {
+          "type": "number",
+          "default": 0.039,
+          "minimum": 0.02,
+          "maximum": 0.08
+        },
+        "inter_lens_distance_m": {
+          "type": "number",
+          "default": 0.0639,
+          "minimum": 0.04,
+          "maximum": 0.09
+        },
+        "screen_width_m": {
+          "type": "number",
+          "default": 0.134,
+          "minimum": 0.08,
+          "maximum": 0.2
+        },
+        "screen_height_m": {
+          "type": "number",
+          "default": 0.062,
+          "minimum": 0.04,
+          "maximum": 0.11
+        },
+        "vertical_offset_m": {
+          "type": "number",
+          "default": 0,
+          "minimum": -0.05,
+          "maximum": 0.05
+        },
+        "fov_left_deg": {
+          "type": "number",
+          "default": 89,
+          "minimum": 1,
+          "maximum": 89
+        },
+        "fov_right_deg": {
+          "type": "number",
+          "default": 89,
+          "minimum": 1,
+          "maximum": 89
+        },
+        "fov_bottom_deg": {
+          "type": "number",
+          "default": 89,
+          "minimum": 1,
+          "maximum": 89
+        },
+        "fov_top_deg": {
+          "type": "number",
+          "default": 89,
+          "minimum": 1,
+          "maximum": 89
+        }
+      },
+      "required": [
+        "profile",
+        "distortion_tweak",
+        "k1",
+        "k2",
+        "screen_to_lens_m",
+        "inter_lens_distance_m",
+        "screen_width_m",
+        "screen_height_m",
+        "vertical_offset_m",
+        "fov_left_deg",
+        "fov_right_deg",
+        "fov_bottom_deg",
+        "fov_top_deg"
+      ]
+    },
+    "tracking": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fusion": {
+          "type": "string",
+          "default": "gyro_accel",
+          "enum": [
+            "gyro_accel",
+            "gyro_accel_mag",
+            "android_game_rotation"
+          ]
+        },
+        "rate_hz": {
+          "type": "integer",
+          "default": 400,
+          "minimum": 100,
+          "maximum": 500
+        },
+        "yaw_correction": {
+          "type": "string",
+          "default": "slow_autocenter",
+          "enum": [
+            "off",
+            "magnetometer",
+            "slow_autocenter"
+          ]
+        },
+        "max_prediction_ms": {
+          "type": "number",
+          "default": 80,
+          "minimum": 0,
+          "maximum": 80
+        },
+        "prediction_ms": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "auto"
+              ]
+            },
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            }
+          ],
+          "default": "auto"
+        },
+        "eye_height_m": {
+          "type": "number",
+          "default": 1.65,
+          "minimum": 0.2,
+          "maximum": 2.5,
+          "description": "Virtual eye height above the SteamVR floor for 3DoF tracking. External positioned tracking preserves its supplied position."
+        }
+      },
+      "required": [
+        "fusion",
+        "rate_hz",
+        "yaw_correction",
+        "max_prediction_ms",
+        "prediction_ms",
+        "eye_height_m"
+      ]
+    },
+    "reprojection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "required": [
+        "enabled"
+      ]
+    },
+    "pacing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_lead_ms": {
+          "type": "number",
+          "default": 4,
+          "minimum": 1,
+          "maximum": 10
+        }
+      },
+      "required": [
+        "target_lead_ms"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mapping": {
+          "type": "string",
+          "default": "xbox",
+          "enum": [
+            "xbox",
+            "playstation",
+            "one_button_cardboard",
+            "touchscreen",
+            "custom"
+          ]
+        },
+        "recenter_hotkey": {
+          "type": "string",
+          "default": "Ctrl+Alt+R",
+          "maxLength": 256
+        },
+        "bind_a": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "left_pad"
+        },
+        "bind_b": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_pad"
+        },
+        "bind_x": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "left_menu"
+        },
+        "bind_y": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_menu"
+        },
+        "bind_left_bumper": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "left_grip"
+        },
+        "bind_right_bumper": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_grip"
+        },
+        "bind_left_stick": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "left_pad"
+        },
+        "bind_right_stick": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_pad"
+        },
+        "bind_start": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "system"
+        },
+        "bind_select": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "recenter"
+        },
+        "bind_volume_up": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_trigger"
+        },
+        "bind_volume_down": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_grip"
+        },
+        "bind_touch_left": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "left_trigger"
+        },
+        "bind_touch_right": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "right_trigger"
+        },
+        "bind_touch_menu": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "system"
+        },
+        "bind_recenter": {
+          "type": "string",
+          "enum": [
+            "none",
+            "left_trigger",
+            "right_trigger",
+            "left_grip",
+            "right_grip",
+            "left_menu",
+            "right_menu",
+            "system",
+            "left_pad",
+            "right_pad",
+            "recenter"
+          ],
+          "default": "recenter"
+        }
+      },
+      "required": [
+        "mapping",
+        "recenter_hotkey",
+        "bind_a",
+        "bind_b",
+        "bind_x",
+        "bind_y",
+        "bind_left_bumper",
+        "bind_right_bumper",
+        "bind_left_stick",
+        "bind_right_stick",
+        "bind_start",
+        "bind_select",
+        "bind_volume_up",
+        "bind_volume_down",
+        "bind_touch_left",
+        "bind_touch_right",
+        "bind_touch_menu",
+        "bind_recenter"
+      ]
+    },
+    "ui": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "stats_overlay": {
+          "type": "string",
+          "default": "off",
+          "enum": [
+            "off",
+            "minimal",
+            "full"
+          ]
+        }
+      },
+      "required": [
+        "stats_overlay"
+      ]
+    },
+    "power": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "keep_awake": {
+          "type": "boolean",
+          "default": true
+        },
+        "thermal_guard": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "required": [
+        "keep_awake",
+        "thermal_guard"
+      ]
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "encrypt_media": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "required": [
+        "encrypt_media"
+      ]
+    },
+    "debug": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "log_level": {
+          "type": "string",
+          "default": "info",
+          "enum": [
+            "trace",
+            "debug",
+            "info",
+            "warn",
+            "error",
+            "critical",
+            "off"
+          ]
+        },
+        "dump_frames": {
+          "type": "boolean",
+          "default": false
+        },
+        "latency_log": {
+          "type": "boolean",
+          "default": false
+        },
+        "test_pattern": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "log_level",
+        "dump_frames",
+        "latency_log",
+        "test_pattern"
+      ]
+    }
+  },
+  "required": [
+    "connection",
+    "video",
+    "fec",
+    "display",
+    "lens",
+    "tracking",
+    "reprojection",
+    "pacing",
+    "input",
+    "ui",
+    "power",
+    "security",
+    "debug"
+  ]
+}
